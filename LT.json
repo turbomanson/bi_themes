@@ -12,6 +12,14 @@
 				    "wordWrap":true,
                     "fontSize":10,
                     "fontFamily":"Segoe UI Light"
+                }],
+                "title": [{
+                    "show": true,
+                    "fontColor": { "solid": { "color": "#753f97"} },
+                    "background": { "solid": { "color": "#FFFFFF"} },
+                    "alignment": "center",
+                    "fontSize": 14,
+                    "fontFamily": "Segoe UI Light"
                 }]
 		    }
 	    },
@@ -25,49 +33,49 @@
         "donutChart": {
             "*": {
                 "legend": [{
-                    "show": true,
+                    "show": false,
                     "position": "Top",
                     "showTitle": true,
                     "titleText": "",
-                    "legendColor": { "solid": { "color": "#01B8AA"}},
+                    "legendColor": { "solid": { "color": "#777777"}},
                     "fontFamily": "Segoe UI",
                     "fontSize": 12
                 }],
                 "labels": [{
                     "show": true,
-                    "labelStyle": "Data",
-                    "color": { "solid": { "color": "#01B8AA"}},
+                    "labelStyle": "Category, data value, percent of total",
+                    "color": { "solid": { "color": "#777777"}},
                     "labelDisplayUnits": "0",
                     "labelPrecision": 0,
                     "fontSize": 10,
-                    "fontFamily": "Segoe UI Light",
-                    "position": "inside"
+                    "fontFamily": "DIN",
+                    "position": "outside"
                 }],
                 "slices": [{
-                    "innerRadiusRatio": 90
+                    "innerRadiusRatio": 60
                 }]
             }
         },
         "pieChart": {
             "*": {
                 "legend": [{
-                    "show": true,
+                    "show": false,
                     "position": "Top",
                     "showTitle": true,
                     "titleText": "",
-                    "legendColor": { "solid": { "color": "#01B8AA"}},
+                    "legendColor": { "solid": { "color": "#777777"}},
                     "fontFamily": "Segoe UI",
                     "fontSize": 12
                 }],
                 "labels": [{
                     "show": true,
-                    "labelStyle": "Data",
-                    "color": { "solid": { "color": "#01B8AA"}},
+                    "labelStyle": "Category, data value, percent of total",
+                    "color": { "solid": { "color": "#777777"}},
                     "labelDisplayUnits": "0",
                     "labelPrecision": 0,
                     "fontSize": 10,
-                    "fontFamily": "Verdana",
-                    "position": "inside"
+                    "fontFamily": "DIN",
+                    "position": "outside"
                 }]
             }
         },
@@ -140,38 +148,47 @@
         "tableEx": {
             "*": {
                 "grid": [{
-                    "gridVertical": true,
-                    "gridVerticalColor": { "solid": { "color": "#FFB8DD"}},
-                    "gridVerticalWeight": 2,
-                    "gridHorizontal": true,
-                    "gridHorizontalColor": { "solid": { "color": "#FFB8DD"}},
-                    "gridHorizontalWeight": 2,
-                    "rowPadding": 2,
-                    "outlineColor": { "solid": { "color": "#FFB8DD"}},
-                    "outlineWeight": 2,
-                    "textSize": 14,
-                    "imageHeight": 100
+                    "gridVertical": false,
+                    "gridHorizontal": false,
+                    "rowPadding": 1,
+                    "outlineColor": { "solid": { "color": "#753f97"}},
+                    "outlineWeight": 1,
+                    "textSize": 10
                 }],
                 "columnHeaders": [{
-                    "fontColor": { "solid": { "color": "#00B8DD"}},
-                    "backColor": { "solid": { "color": "#00AA22"}},
-                    "outline": "Frame",
+                    "fontColor": { "solid": { "color": "#000000"}},
+                    "backColor": { "solid": { "color": "#FFFFFF"}},
+                    "outline": "BottomOnly",
                     "autoSizeColumnWidth": true,
-                    "fontFamily": "Courier New",
-                    "fontSize": 12,
-                    "alignment": "Left",
+                    "fontFamily": "Segoe UI Light",
+                    "fontSize": 10,
+                    "alignment": "Center",
+                    "urlIcon": true,
                     "wordWrap": true
                 }],
                 "values": [{
-                    "fontColorPrimary": { "solid": { "color": "#00B8DD"}},
-                    "backColorPrimary": { "solid": { "color": "#00AA22"}},
-                    "fontColorSecondary": { "solid": { "color": "#FFB8DD"}},
-                    "backColorSecondary": { "solid": { "color": "#FFAA22"}},
-                    "outline": "Frame",
-                    "urlIcon": true,
+                    "fontColorPrimary": { "solid": { "color": "#000000"}},
+                    "backColorPrimary": { "solid": { "color": "#FFFFFF"}},
+                    "fontColorSecondary": { "solid": { "color": "#000000"}},
+                    "backColorSecondary": { "solid": { "color": "#f3e0ec"}},
+                    "bandedRowHeaders": true,
+                    "valuesOnRow": false,
+                    "outline": "None",
+                    "urlIcon": false,
                     "wordWrap": true,
-                    "fontFamily": "Courier New",
-                    "fontSize": 12
+                    "fontFamily": "Segoe UI Light",
+                    "fontSize": 10
+                }],
+                "subTotals": [{
+                    "rowSubtotals": true,
+                    "columnSubtotals": true,
+                    "fontColor": { "solid": { "color": "000000"}},
+                    "fontFamily": "Segoe UI Light",
+                    "fontSize": 10,
+                    "applyToHeaders": true,
+                    "rowSubtotalsPosition": "Bottom",
+                    "perRowLevel": true,
+                    "perColumnLevel": true                  
                 }],
                 "total": [{
                     "totals": true,
