@@ -1,6 +1,6 @@
 {
     "name": "LT",
-    "dataColors": ["#753f97", "#fdb911", "#F61057", "#f3e0ec"],
+    "dataColors":["#753f97", "#fdb911", "#F61057", "#f3e0ec", "#d9bbf9", "#a9Cef4", "#ec7505", "#8ea604", "#08415c"],
     "background":"#FFFFFF",
     "foreground": "#000000",
     "tableAccent": "#753f97",
@@ -11,13 +11,15 @@
                     "responsive":true,
 				    "wordWrap":true,
                     "fontSize":10,
-                    "fontFamily":"Segoe UI Light"
+                    "fontFamily":"Segoe UI Light",
+                    "alignment": "Center"
                 }],
                 "title": [{
                     "show": true,
                     "fontColor": { "solid": { "color": "#753f97"} },
-                    "background": { "solid": { "color": "#FFFFFF"} },
-                    "alignment": "center",
+                    "background": "None",
+                    "backgroundTransparency": 100,
+                    "alignment": "Center",
                     "fontSize": 14,
                     "fontFamily": "Segoe UI Light"
                 }]
@@ -65,7 +67,7 @@
                     "titleText": "",
                     "legendColor": { "solid": { "color": "#777777"}},
                     "fontFamily": "Segoe UI",
-                    "fontSize": 12
+                    "fontSize": 10
                 }],
                 "labels": [{
                     "show": true,
@@ -121,6 +123,7 @@
                     "valuesOnRow": false,
                     "outline": "None",
                     "urlIcon": false,
+                    "alignment": "Center",
                     "wordWrap": true,
                     "fontFamily": "Segoe UI Light",
                     "fontSize": 10
@@ -135,6 +138,15 @@
                     "rowSubtotalsPosition": "Bottom",
                     "perRowLevel": true,
                     "perColumnLevel": true                  
+                }],
+                "columnFormatting": [{
+                    "fontColor": { "solid": { "color": "000000"}},
+                    "fontFamily": "Segoe UI Light",
+                    "alignment": "Center",
+                    "styleHeader": true,
+                    "styleValues": true,
+                    "styleTotal": true,
+                    "styleSubtotals": true
                 }],
                 "total": [{
                     "fontColor": { "solid": { "color": "#000000"}},
@@ -190,13 +202,22 @@
                     "perRowLevel": true,
                     "perColumnLevel": true                  
                 }],
+                "columnFormatting": [{
+                    "fontColor": { "solid": { "color": "000000"}},
+                    "fontFamily": "Segoe UI Light",
+                    "alignment": "Center",
+                    "styleHeader": true,
+                    "styleValues": true,
+                    "styleTotal": true,
+                    "styleSubtotals": true
+                }],
                 "total": [{
                     "totals": true,
-                    "fontColor": { "solid": { "color": "#00B8DD"}},
-                    "backColor": { "solid": { "color": "#00AA22"}},
-                    "outline": "Frame",
-                    "fontFamily": "Courier New",
-                    "fontSize": 14
+                    "fontColor": { "solid": { "color": "#000000"}},
+                    "backColor": { "solid": { "color": "#FFFFFF"}},
+                    "outline": "None",
+                    "fontFamily": "Segoe UI Light",
+                    "fontSize": 10
                 }]
             }
         },
@@ -206,123 +227,122 @@
                     "responsive": true
                 }],
                 "legend": [{
-                    "show": true,
+                    "show": false,
                     "position": "Top",
                     "showTitle": true,
                     "titleText": "",
-                    "labelColor": { "solid": { "color": "#01B8AA"}},
-                    "fontFamily": "Courier New",
+                    "labelColor": { "solid": { "color": "#777777"}},
+                    "fontFamily": "Segoe UI Light",
                     "fontSize": 10
                 }],
                 "categoryAxis": [{
                     "show": true,
-                    "labelColor": { "solid": { "color": "#01B8AA"}},
-                    "fontSize": 14,
-                    "fontFamily": "Courier New",
+                    "labelColor": { "solid": { "color": "#777777"}},
+                    "fontSize": 10,
+                    "fontFamily": "Segoe UI Light",
                     "preferredCategoryWidth": 30,
                     "maxMarginFactor": 28,
                     "innerPadding": 22,
                     "concatenateLabels": true,
-                    "showAxisTitle": true,
+                    "showAxisTitle": false,
                     "axisStyle": "showTitleOnly",
-                    "titleColor": { "solid": { "color": "#01B8AA"}},
-                    "titleText": "asdf",
-                    "titleFontSize": 12,
+                    "titleText": "",
+                    "titleColor": { "solid": { "color": "#777777"}},
+                    "titleFontSize": 10,
                     "titleFontFamily": "Segoe UI"
                 }],
                 "valueAxis": [{
                     "show": true,
                     "position": "Right",
                     "axisScale": "Linear",
-                    "start": 0,
-                    "end": 10,
-                    "labelColor": { "solid": { "color": "#01B8AA"}},
-                    "fontSize": 14,
-                    "fontFamily": "Courier New",
-                    "labelDisplayUnits": "0",
+                    "start": "Auto",
+                    "end": "Auto",
+                    "labelColor": { "solid": { "color": "#777777"}},
+                    "fontSize": 10,
+                    "fontFamily": "Segoe UI Light",
+                    "labelDisplayUnits": "Auto",
                     "labelPrecision": "Auto",
-                    "showAxisTitle": true,
+                    "showAxisTitle": false,
                     "axisStyle": "showTitleOnly",
-                    "color": { "solid": { "color": "01B8AA"}},
-                    "titleText": "asdf",
-                    "titleFontSize": 12,
-                    "titleFontFamily": "Courier New",
+                    "color": { "solid": { "color": "#777777"}},
+                    "titleFontSize": 10,
+                    "titleFontFamily": "Segoe UI Light",
                     "gridlineShow": true,
-                    "gridlineColor": { "solid": { "color": "#01B8AA"}},
-                    "gridlineThickness": 2,
-                    "gridlineStyle": "dashed"
+                    "gridlineColor": { "solid": { "color": "#777777"}},
+                    "gridlineThickness": 1,
+                    "gridlineStyle": "solid"
                 }],
                 "dataPoint": [{
                     "defaultColor": { "solid": { "color": "#448822"}}
                 }],
                 "labels": [{
                     "show": true,
-                    "color": { "solid": { "color": "#EEEEEE"}},
+                    "color": { "solid": { "color": "#777777"}},
                     "labelDisplayUnits": "0",
                     "labelPrecision": 1,
-                    "labelOrientation": "vertical",
+                    "labelOrientation": "horizontal",
                     "labelPosition": "OutsideEnd",
-                    "fontSize": 11,
-                    "fontFamily": "Courier New",
-                    "enableBackground": true,
-                    "backgroundColor": { "solid": { "color": "#0928DD"}},
-                    "backgroundTransparency": 30
+                    "fontSize": 10,
+                    "fontFamily": "Segoe UI Light",
+                    "enableBackground": false,
+                    "backgroundColor": { "solid": { "color": "000000"}},
+                    "backgroundTransparency": 100
                 }],     
                 "plotArea": [{
-                    "transparency": 20
+                    "transparency": 100
                 }]
             }
         },
-        "clusteredColumnChart": {
+        "clusteredBarChart": {
             "*": {
                 "general": [{
                     "responsive": true
                 }],
                 "legend": [{
-                    "show": true,
+                    "show": false,
                     "position": "Top",
                     "showTitle": true,
                     "titleText": "",
-                    "labelColor": { "solid": { "color": "#01B8AA"}},
-                    "fontFamily": "Courier New",
+                    "labelColor": { "solid": { "color": "#777777"}},
+                    "fontFamily": "Segoe UI Light",
                     "fontSize": 10
                 }],
                 "categoryAxis": [{
                     "show": true,
-                    "labelColor": { "solid": { "color": "#01B8AA"}},
-                    "fontSize": 14,
-                    "fontFamily": "Courier New",
+                    "position": "Left",
+                    "labelColor": { "solid": { "color": "#777777"}},
+                    "fontSize": 10,
+                    "fontFamily": "Segoe UI Light",
                     "preferredCategoryWidth": 30,
                     "maxMarginFactor": 28,
                     "innerPadding": 22,
                     "concatenateLabels": true,
-                    "showAxisTitle": true,
-                    "axisStyle": "showTitleOnly",
-                    "titleColor": { "solid": { "color": "#01B8AA"}},
-                    "titleText": "asdf",
-                    "titleFontSize": 12,
+                    "showAxisTitle": false,
+                    "titleColor": { "solid": { "color": "#777777"}},
+                    "titleText": "",
+                    "titleFontSize": 10,
                     "titleFontFamily": "Segoe UI"
                 }],
                 "valueAxis": [{
                     "show": true,
                     "position": "Right",
                     "axisScale": "Linear",
-                    "start": 0,
-                    "end": 10,
-                    "labelColor": { "solid": { "color": "#01B8AA"}},
-                    "fontSize": 14,
-                    "fontFamily": "Courier New",
+                    "start": "Auto",
+                    "end": "Auto",
+                    "labelColor": { "solid": { "color": "#777777"}},
+                    "fontSize": 10,
+                    "fontFamily": "Segoe UI Light",
                     "labelDisplayUnits": "0",
                     "labelPrecision": "Auto",
-                    "showAxisTitle": true,
+                    "showAxisTitle": false,
                     "axisStyle": "showTitleOnly",
-                    "color": { "solid": { "color": "01B8AA"}},
-                    "titleText": "asdf",
-                    "titleFontSize": 12,
-                    "titleFontFamily": "Courier New",
+                    "color": { "solid": { "color": "#777777"}},
+                    "titleText": "",
+                    "titleFontSize": 10,
+                    "titleFontFamily": "Segoe UI Light",
                     "gridlineShow": true,
-                    "gridlineColor": { "solid": { "color": "#01B8AA"}},
-                    "gridlineThickness": 2,
+                    "gridlineColor": { "solid": { "color": "#777777"}},
+                    "gridlineThickness": 1,
                     "gridlineStyle": "dashed"
                 }],
                 "dataPoint": [{
@@ -330,20 +350,60 @@
                 }],
                 "labels": [{
                     "show": true,
-                    "color": { "solid": { "color": "#EEEEEE"}},
+                    "color": { "solid": { "color": "#777777"}},
                     "labelDisplayUnits": "0",
                     "labelPrecision": 1,
-                    "labelOrientation": "vertical",
                     "labelPosition": "OutsideEnd",
-                    "fontSize": 11,
-                    "fontFamily": "Courier New",
-                    "enableBackground": true,
-                    "backgroundColor": { "solid": { "color": "#0928DD"}},
-                    "backgroundTransparency": 30
+                    "fontSize": 10,
+                    "fontFamily": "Segoe UI Light",
+                    "enableBackground": false,
+                    "backgroundTransparency": 100
                 }],     
                 "plotArea": [{
-                    "transparency": 20
+                    "transparency": 100
                 }]
+            }
+        },
+        "card": {
+            "*": {
+                "labels": [{
+                    "color": { "solid": { "color": "#000000"}},
+                    "labelDisplayUnits": "0",
+                    "labelPrecision": 0,
+                    "fontSize": 18,
+                    "fontFamily": "Verdana"
+                }],
+                "categoryLabels": [{
+                    "show": false,
+                    "color": { "solid": { "color": "#01B8AA"}},
+                    "fontSize": 10,
+                    "fontFamily": "Verdana"
+                }],
+                "wordWrap": [{
+                    "show": true
+                }],
+                "background": [{
+                        "show": false,
+                        "color": {
+                            "solid": {
+                                "color": "#000000"
+                            }
+                        },
+                        "transparency": 100
+                    }
+                ],
+                  "title": [{
+                    "show": true,
+                    "fontColor": { "solid": { "color": "#753f97" } },
+                    "background": { "solid": { "color": "#062b60" } },
+                    "alignment": "Center",
+                    "fontSize": 14,
+                    "fontFamily": "Segoe UI"
+                  }],
+                  "border": [{
+                    "show": false,
+                    "color": { "solid": { "color": "#062b60"}}
+                  }]
             }
         }
     }
