@@ -370,14 +370,14 @@
                     "color": { "solid": { "color": "#000000"}},
                     "labelDisplayUnits": "0",
                     "labelPrecision": 0,
-                    "fontSize": 18,
-                    "fontFamily": "Verdana"
+                    "fontSize": 14,
+                    "fontFamily": "Segoe UI Light"
                 }],
                 "categoryLabels": [{
                     "show": false,
                     "color": { "solid": { "color": "#01B8AA"}},
-                    "fontSize": 10,
-                    "fontFamily": "Verdana"
+                    "fontSize": 14,
+                    "fontFamily": "Segoe UI Light"
                 }],
                 "wordWrap": [{
                     "show": true
@@ -396,6 +396,7 @@
                     "show": true,
                     "fontColor": { "solid": { "color": "#753f97" } },
                     "background": { "solid": { "color": "#062b60" } },
+                    "backgroundTransparency": 100,
                     "alignment": "Center",
                     "fontSize": 14,
                     "fontFamily": "Segoe UI"
